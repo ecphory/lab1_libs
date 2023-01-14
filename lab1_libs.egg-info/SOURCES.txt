@@ -1,0 +1,8 @@
+setup.py
+lab1_libs/__init__.py
+lab1_libs/evaluator.py
+lab1_libs/searchtree.py
+lab1_libs.egg-info/PKG-INFO
+lab1_libs.egg-info/SOURCES.txt
+lab1_libs.egg-info/dependency_links.txt
+lab1_libs.egg-info/top_level.txt
