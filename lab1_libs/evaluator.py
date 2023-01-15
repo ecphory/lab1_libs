@@ -101,15 +101,15 @@ def evaluate(f):
             shuffle(thing)
             
             for i, v in enumerate(thing):
-                match randint(0, 5):
-                    case 1:
-                        thing[i] = str(v)
-                    case 2:
-                        thing[i] = float(v)
-                    case 3:
-                        thing[i] = [v]
-                    case 4:
-                        thing[i] = {'i': v}
+                t = randint(0, 5)
+                if t == 1:
+                    thing[i] = str(v)
+                elif t == 2:
+                    thing[i] = float(v)
+                elif t == 3:
+                    thing[i] = [v]
+                elif t == 4:
+                    thing[i] = {'i': v}
             
             things_to_try.append(thing)
             
@@ -131,16 +131,17 @@ def evaluate(f):
             shuffle(thing)
             
             for i, v in enumerate(thing):
-                match randint(0, 5):
-                    case 1:
-                        thing[i] = str(v)
-                    case 2:
-                        thing[i] = float(v)
-                    case 3:
-                        thing[i] = [v]
-                    case 4:
-                        thing[i] = {'i': v}
-            
+                t = randint(0, 5)
+                if t == 1:
+                    thing[i] = str(v)
+                elif t == 2:
+                    thing[i] = float(v)
+                elif t == 3:
+                    thing[i] = [v]
+                elif t == 4:
+                    thing[i] = {'i': v}
+
+                           
             things_to_try.append(thing)
             
             for thing in things_to_try:
