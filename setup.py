@@ -7,6 +7,7 @@ setup(
         author='Eilene Tomkins-Flanagan',
         author_email='eilenetomkinsflanaga@cmail.carleton.ca',
         packages=['lab1_libs'],
+        install_requires=['colorama >= 0.4'],
 
         classifiers=[
             'Programming Language :: Python :: 3'
