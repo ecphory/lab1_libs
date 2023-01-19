@@ -197,7 +197,7 @@ def evaluate(f):
                         print("Make sure you're adding children in the right order!")
                         return
                     
-        exsol = 'in position [1], set current = stack.pop(0), and in position [2] write a for loop\n\nfor child in current.children:\n    stack.append(child)'
+        exsol = 'in position [1], set current = stack.pop(-1), and in position [2] write a for loop\n\nfor child in current.children:\n    stack.append(child)'
             
                 
     elif f.__name__ == 'bfs':
@@ -242,7 +242,7 @@ def evaluate(f):
                         print("Make sure you're adding children in the right order!")
                         return
                     
-        exsol = 'in position [1], set current = stack.pop(-1), and in position [2] write a for loop\n\nfor child in current.children:\n    stack.append(child)\n'
+        exsol = 'use the code from the previous exercise, and rename stack to queue. Then, in position [1], set current = queue.pop(0), and in position [2] write a for loop\n\nfor child in current.children:\n    stack.append(child)\n'
     else:    
         print('Invalid function name, remember not to rename your function!')
         return
